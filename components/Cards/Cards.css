@@ -1,0 +1,32 @@
+.Cards{
+    display: flex;
+    gap: 10px;
+
+}
+.parentContainer{
+    width: 100%;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .Cards {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        gap: 3rem; /* Adds a gap between parent containers */
+    }
+
+    .parentContainer {
+        height: 9rem; /* Keeps the specified height */
+        margin: 0 auto; /* Optional: Center the cards */
+    }
+
+    .Card {
+        margin-bottom: 0; /* Ensure no additional spacing if using `gap` */
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Cards{
+        width: 90%;
+    }
+}
